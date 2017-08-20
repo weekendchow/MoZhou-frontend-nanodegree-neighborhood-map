@@ -1,0 +1,149 @@
+#map {
+	height: 100%;
+}
+
+html, body {
+	font: 14px sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	height: 100%;
+	position: relative;
+}
+
+input {
+	font-size: 12px;
+}
+
+#headline {
+	position: absolute;
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	opacity: 0.9;
+	top: 15px;
+	left: 5px;
+	width: 306px;
+	height: 30px;
+	line-height: 30px;
+	border: 0.5px solid;
+}
+
+#toggle {
+	position: absolute;
+	top: 18px;
+	left: 320px;
+	font-size: 1.5em;
+	color: black;
+}
+
+#search-box {
+	position: absolute;
+	opacity: 0.9;
+	top: 46px;
+	left: 5px;
+	width: 300px;
+	height: 30px;
+	border: 0.5px solid;
+	padding: 0 3px;
+	display: flex;
+}
+
+#listview {
+	opacity: 0.9;
+	position: absolute;
+	margin: 0;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	background-color: white;
+	font-size: 0.7em;
+	top: 77px;
+	left: 5px;
+	width: 300px;
+	height: 200px;
+	border: 0.5px solid;
+	padding: 0 3px;
+}
+
+.place-item {
+	margin: 3px 0;
+	padding: 8px 2px;
+	list-style: none;
+}
+
+.place-name {
+	display: block;
+	font-weight: bold;
+}
+
+.place-line {
+	display: block;
+}
+
+@media screen and (max-width: 460px) {
+	#headline {
+		position: absolute;
+		font-size: 8px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		background-color: white;
+		opacity: 0.9;
+		top: 10px;
+		left: 5px;
+		width: 156px;
+		height: 25px;
+		line-height: 30px;
+		border: 0.5px solid;
+	}
+
+	#toggle {
+		position: absolute;
+		top: 10px;
+		left: 170px;
+		font-size: 1.5em;
+		color: black;
+	}
+
+	#search-box {
+		position: absolute;
+		opacity: 0.9;
+		top: 36px;
+		left: 5px;
+		width: 150px;
+		height: 25px;
+		border: 0.5px solid;
+		padding: 0 3px;
+		display: flex;
+	}
+
+	#listview {
+		opacity: 0.9;
+		position: absolute;
+		margin: 0;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		background-color: white;
+		font-size: 0.7em;
+		top: 62px;
+		left: 5px;
+		width: 150px;
+		height: 200px;
+		border: 0.5px solid;
+		padding: 0 3px;
+	}
