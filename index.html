@@ -8,30 +8,28 @@
       <script src="https://use.fontawesome.com/4f26bdad79.js"></script>
    </head>
    <body>
-      <div class="container">
-         <div id="map"></div>
-         <div class="options-box">
-            <h1 id="headline">Skateboarding in Ottawa</h1>
-            <input id="search-box" placeholder="search..." data-bind="textInput: filter,  visible: isVisible">
-            <a id="toggle" href="#" data-bind="click: toggleVisibility">
-            <i class="fa fa-list" aria-hidden="true"></i>
-            </a>
-            <div id="listview" data-bind="visible: isVisible">
-               <ul data-bind="foreach: filterResults">
-                  <li class="place-item">
-                     <a href="#" data-bind="click: $root.listClicked">
-                     <span class="place-name" data-bind="text: name"></span>
-                     <span class="place-address" data-bind="text: address"></span>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </div>
+      <main id="map"></main>
+      <aside class="options-box">
+         <h1 id="headline">Skateboarding in Ottawa</h1>
+         <input id="search-box" placeholder="search..." data-bind="textInput: filter,  visible: isVisible">
+         <a id="toggle" href="#" data-bind="click: toggleVisibility">
+         <i class="fa fa-list" aria-hidden="true"></i>
+         </a>
+         <section id="listview" data-bind="visible: isVisible">
+            <ul data-bind="foreach: filterResults">
+               <li class="place-item">
+                  <a href="#" data-bind="click: $root.listClicked">
+                  <span class="place-name" data-bind="text: name"></span>
+                  <span class="place-address" data-bind="text: address"></span>
+                  </a>
+               </li>
+            </ul>
+         </section>
+      </aside>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="js/knockout-3.4.2.js"></script>
       <script src="js/app.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ_MG_q9fyVEMd6bYx6S-meWOm2bVzX_I&libraries=geometry&callback=initMap"
-         async defer></script>
+         async defer onerror="mapLoadError()"></script>
    </body>
 </html>
