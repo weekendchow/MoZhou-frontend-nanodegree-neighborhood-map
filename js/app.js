@@ -364,5 +364,10 @@ function MapViewModel() {
             console.log("Opps,error happens! please load again.");
         }
     });
+    
+    //Google Map API error handling
+    self.mapRequestTimeout = setTimeout(function() {
+        alert("Failed to load the Google Maps API, please try again!");
+    }, 5000);
 
 }
