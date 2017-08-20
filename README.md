@@ -13,7 +13,7 @@ This is a single page application project for Udacity Front-end Nonodegree using
 
 ## APIs
 1. Google Maps API to implement the map and related function.
-2. Download JSON format data and build the API with GitHub Pages.(https://weekendchow.github.io/skateboard-parks-API/skateboard-parks.json)
+2. Download JSON format data and build the API with GitHub Pages.(https://weekendchow.github.io/stateboard_park_API/stateboard_park.json)
  
 ## Running
 Clone or download this repo and open the index.html file. Or open it [live](https://weekendchow.github.io/MoZhou-frontend-nanodegree-neighborhood-map/index.html).
