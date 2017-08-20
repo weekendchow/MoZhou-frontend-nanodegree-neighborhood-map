@@ -360,6 +360,7 @@ function MapViewModel() {
 
         },
         error: function() {
+            alert("Opps,error happens! please load again.");
             console.log("Opps,error happens! please load again.");
         }
     });
