@@ -16,7 +16,7 @@ This is a single page application project for Udacity Front-end Nonodegree using
 2. Download JSON format data and build the API with GitHub Pages.(https://weekendchow.github.io/skateboard-parks-API/skateboard-parks.json)
  
 ## Running
-Clone or download this repo and open the index.html file. Or open it [live]().
+Clone or download this repo and open the index.html file. Or open it [live](https://weekendchow.github.io/MoZhou-frontend-nanodegree-neighborhood-map/index.html).
 
 
 ## Attribution
