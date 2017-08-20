@@ -360,8 +360,7 @@ function MapViewModel() {
 
         },
         error: function() {
-            self.dealStatus('Oops, something went wrong, please reload the page and try again.');
-            self.loadImg('');
+            console.log("Opps,error happens! please load again.");
         }
     });
 
