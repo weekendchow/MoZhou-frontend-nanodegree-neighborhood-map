@@ -339,12 +339,8 @@ function MapViewModel() {
 
     //Get the data from API asynchronously
     $.ajax({
-        url: 'http://query.yahooapis.com/v1/public/yql',
-        dataType: 'jsonp',
-        data: {
-            q: "select * from json where url=\"https://weekendchow.github.io/skateboard-parks-API/skateboard-parks.json\"",
-            format: "json"
-        },
+        url: 'https://weekendchow.github.io/stateboard_park_API/stateboard_park.json',
+        dataType: 'json',
         success: function(data) {
             data = data.query.results.json.features;
 
