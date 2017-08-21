@@ -23,14 +23,14 @@ function initMap() {
 //DataObject of each SkateboardPark
 function SkateboardPark(dataObj) {
     var self = this;
-    self.name = dataObj.properties.NAME;
-    self.name_fr = dataObj.properties.NAME_FR;
-    self.address_fr = dataObj.properties.ADDRESS_FR;
-    self.address = dataObj.properties.ADDRESS;
-    self.parkID = dataObj.properties.PARK_ID;
-    self.notes = dataObj.properties.NOTES;
-    self.latitude = parseFloat(dataObj.geometry.coordinates[1]);
-    self.longitude = parseFloat(dataObj.geometry.coordinates[0]);
+    self.name = dataObj.properties.NAME ? dataObj.properties.NAME : "NAME property not available";
+    self.name_fr = dataObj.properties.NAME_FR ? dataObj.properties.NAME_FR : "NAME_FR property not available";
+    self.address_fr = dataObj.properties.ADDRESS_FR ? dataObj.properties.ADDRESS_FR : "ADDRESS_FR property not available";
+    self.address = dataObj.properties.ADDRESS ? dataObj.properties.ADDRESS : "ADDRESS property not available";
+    self.parkID = dataObj.properties.PARK_ID ? dataObj.properties.PARK_ID : "PARK_ID property not available";
+    self.notes = dataObj.properties.NOTES ? dataObj.properties.NOTES : "NOTES property not available";
+    self.latitude = dataObj.geometry.coordinates[1] ? parseFloat(dataObj.geometry.coordinates[1]) : "latitude property not available";
+    self.longitude = dataObj.geometry.coordinates[0] ? parseFloat(dataObj.geometry.coordinates[0]) : "longitude property not available";
 
     //Create the map marker for SkateboardPark object
     self.mapMarker = new google.maps.Marker({
