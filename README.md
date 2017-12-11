@@ -1,6 +1,7 @@
 # Neighborhood Map_Skateboarding in Ottawa 
 ---
 This is a single page application project for Udacity Front-end Nonodegree using knockoutJS framework & Google Maps API to implement.
+![mapSreenShot](https://github.com/weekendchow/fend-neighborhood-map/blob/master/image/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-12-05%20%E4%B8%8B%E5%8D%889.06.32.png)
 
 ## Features
 1. Google Map implimentation shows Ottawa stateboard park locations with markers
